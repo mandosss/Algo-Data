@@ -1,0 +1,7 @@
+It is a complete tree; all levels are completely filled but possibly last level. An array can be used to store them.
+There are two type of heaps: min and max heaps. The root must be the minimum value with the leaves of the tree, it is done recursively for the rest of the min-heap, and vice-versa for max-heap.
+Since this data structure is stored in an array, the nodes are indexed in the following form:
+	Array[(i-1) / 2] ----- It returns the root
+	Array[(2*i) + 1] ---- It returns the left leaf
+	Array[(2*i) + 2] --- It returns the right leaf
+Python has a heapq library that provides lots of functions in regard to a min and max heaps.
