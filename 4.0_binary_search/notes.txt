@@ -1,0 +1,19 @@
+Binary Search
+
+In this section, we will implementing a binary Search 
+    using recursion. This algorithms has two attributes:
+    low and high where low = 0 and high = n-1. The median
+    candiate is found as follows:
+        mid = (low + high)/2
+    
+    Then we take in consideration the following three cases:
+        1- If the target equals data[mid], then we're done :D
+        2- If target < data[mid], then we recur on the firt half
+            of the sequence, that is, on the interval of indices from 
+            low to mid - 1.
+        3- If target > data[mid], then we recur on the second half
+            of the sequence, e.i., on the interval of indices from 
+            mid + 1 to high.
+This algorithm is O(log(n)) whenever the sequence is sorted... using an 
+    unsorted sequence, we'd probably use asequenceial search... taking O(n)search.
+    
