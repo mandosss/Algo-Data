@@ -10,7 +10,7 @@ def binary_search(data, target, low, high):
     else:
         mid = (low + high) // 2
         if target == data[mid]:
-            return True;
+            return True
         elif target < data[mid]:
             return binary_search(data,target,low,mid-1)
         else:
